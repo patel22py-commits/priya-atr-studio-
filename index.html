@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priya Studio | Handcrafted Resin Art, Jewellery & Custom T-Shirts</title>
+  <meta name="description" content="Priya Studio - Discover handcrafted resin memories, expressive fashion and elegant jewellery — thoughtfully created for life's beautiful moments.">
+  <meta name="keywords" content="Priya Studio, resin art, ocean resin tray, geode clock, resin jewellery, custom t-shirts, oversized tees, wedding flower preservation">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <!-- Google Fonts & FontAwesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       1. ANNOUNCEMENT TOP BAR
+       ================================================================= -->
+  <div class="top-bar" id="announcement-bar">
+    <span>
+      ✨ <strong>Festive Offer:</strong> Use Code <strong>PRIYA10</strong> for Flat 10% OFF | Free Shipping above ₹999 All Over India!
+    </span>
+    <button class="top-bar-close" onclick="document.getElementById('announcement-bar').style.display='none';" aria-label="Close Announcement">&times;</button>
+  </div>
+
+  <!-- =================================================================
+       2. STICKY HEADER & NAVIGATION MENU
+       ================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="logo">
+        <img src="images/logo.jpg" alt="Priya Art Studio Logo" class="brand-logo-img">
+        <span>Priya</span>Studio
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#shop-section" class="nav-link dropdown-toggle" onclick="window.filterByCollection('resin-art')">
+              Resin Art <span class="badge-nav">Hot</span> <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('varmala-preservation')">
+                  <i class="fa-solid fa-heart" style="color:#b5838d;"></i>
+                  <div>
+                    <span class="dropdown-item-title">Varmala Preservation</span>
+                    <span class="dropdown-item-desc">Wedding garland & couple flower keepsakes</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('baby-memory')">
+                  <i class="fa-solid fa-baby" style="color:#84a98c;"></i>
+                  <div>
+                    <span class="dropdown-item-title">Baby Memory</span>
+                    <span class="dropdown-item-desc">Footprints, birth stats & first curls in resin</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('keychain')">
+                  <i class="fa-solid fa-key" style="color:#d4a373;"></i>
+                  <div>
+                    <span class="dropdown-item-title">Keychain</span>
+                    <span class="dropdown-item-desc">Custom letter, photo & floral resin keychains</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('resin-earrings')">
+                  <i class="fa-solid fa-gem" style="color:#b5838d;"></i>
+                  <div>
+                    <span class="dropdown-item-title">Earrings</span>
+                    <span class="dropdown-item-desc">Handmade floral & crystal resin earrings</span>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('resin-art')">
+                  <i class="fa-solid fa-gem" style="color:var(--accent-primary);"></i>
+                  <div>
+                    <span class="dropdown-item-title">All Resin Art</span>
+                    <span class="dropdown-item-desc">Ocean trays, geode clocks & coasters</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#shop-section" class="nav-link dropdown-toggle" onclick="window.filterByCollection('jewellery')">
+              Jewellery <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('anti-tarnish')">
+                  <i class="fa-solid fa-shield-halved" style="color:#d4a373;"></i>
+                  <div>
+                    <span class="dropdown-item-title">Anti Tarnish</span>
+                    <span class="dropdown-item-desc">Waterproof 18K gold plated daily wear</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('navratri-collection')">
+                  <i class="fa-solid fa-wand-magic-sparkles" style="color:#e07a5f;"></i>
+                  <div>
+                    <span class="dropdown-item-title">Navratri Collection</span>
+                    <span class="dropdown-item-desc">Garba oxidised jhumkas & mirror choker sets</span>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a href="#shop-section" class="dropdown-item" onclick="window.filterByCollection('jewellery')">
+                  <i class="fa-solid fa-ring" style="color:var(--accent-primary);"></i>
+                  <div>
+                    <span class="dropdown-item-title">All Jewellery</span>
+                    <span class="dropdown-item-desc">Pendants, pearl chokers, rings & earrings</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#shop-section" class="nav-link" onclick="window.filterByCollection('t-shirts')">T-Shirts</a></li>
+          <li><a href="#custom-orders" class="nav-link">Custom Orders</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions (Dark Mode, Wishlist, Cart) -->
+      <div class="header-actions">
+        <!-- Dark Mode Toggle Button -->
+        <button class="action-btn theme-toggle" id="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark Mode">
+          <i class="fa-regular fa-moon"></i>
+          <i class="fa-regular fa-sun"></i>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="wishlist-btn" title="View Wishlist" onclick="window.filterByCollection('all')" aria-label="View Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-count" id="wishlist-count-badge">0</span>
+        </button>
+
+        <!-- Cart Drawer Button -->
+        <button class="action-btn" id="cart-toggle-btn" title="View Shopping Cart" aria-label="View Shopping Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge-count" id="cart-count-badge">0</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="action-btn mobile-toggle" id="mobile-menu-btn" title="Open Mobile Menu" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =================================================================
+       3. MOBILE NAVIGATION DRAWER
+       ================================================================= -->
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Priya Art Studio Logo" class="brand-logo-img">
+        <span>Priya</span>Studio
+      </div>
+      <button class="action-btn" id="mobile-close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+      
+      <!-- Resin Art Mobile Dropdown Group -->
+      <div class="mobile-dropdown-group" id="mobile-resin-group">
+        <div class="mobile-dropdown-header">
+          <a href="#shop-section" class="nav-link" onclick="window.filterByCollection('resin-art')">
+            <i class="fa-solid fa-gem"></i> Resin Art
+          </a>
+          <button class="mobile-sub-toggle" id="mobile-resin-toggle" aria-label="Toggle Submenu">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="mobile-submenu" id="mobile-resin-submenu">
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('varmala-preservation')">
+            <i class="fa-solid fa-heart" style="color:#b5838d;"></i> Varmala Preservation
+          </a>
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('baby-memory')">
+            <i class="fa-solid fa-baby" style="color:#84a98c;"></i> Baby Memory
+          </a>
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('keychain')">
+            <i class="fa-solid fa-key" style="color:#d4a373;"></i> Keychain
+          </a>
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('resin-earrings')">
+            <i class="fa-solid fa-gem" style="color:#b5838d;"></i> Earrings
+          </a>
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('resin-art')">
+            <i class="fa-solid fa-arrow-right"></i> All Resin Art
+          </a>
+        </div>
+      </div>
+
+      <!-- Jewellery Mobile Dropdown Group -->
+      <div class="mobile-dropdown-group" id="mobile-jewel-group">
+        <div class="mobile-dropdown-header">
+          <a href="#shop-section" class="nav-link" onclick="window.filterByCollection('jewellery')">
+            <i class="fa-solid fa-ring"></i> Handcrafted Jewellery
+          </a>
+          <button class="mobile-sub-toggle" id="mobile-jewel-toggle" aria-label="Toggle Jewellery Submenu">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="mobile-submenu" id="mobile-jewel-submenu">
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('anti-tarnish')">
+            <i class="fa-solid fa-shield-halved" style="color:#d4a373;"></i> Anti Tarnish
+          </a>
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('navratri-collection')">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color:#e07a5f;"></i> Navratri Collection
+          </a>
+          <a href="#shop-section" class="mobile-sub-link" onclick="window.filterByCollection('jewellery')">
+            <i class="fa-solid fa-arrow-right"></i> All Jewellery
+          </a>
+        </div>
+      </div>
+
+      <a href="#shop-section" class="nav-link" onclick="window.filterByCollection('t-shirts')"><i class="fa-solid fa-shirt"></i> Aesthetic T-Shirts</a>
+      <a href="#custom-orders" class="nav-link"><i class="fa-solid fa-paintbrush"></i> Custom Orders</a>
+      <a href="#about" class="nav-link"><i class="fa-solid fa-heart"></i> About Our Studio</a>
+      <a href="#faq" class="nav-link"><i class="fa-solid fa-circle-question"></i> FAQs</a>
+      <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <button class="btn btn-secondary" id="mobile-theme-toggle-btn" style="width:100%;">
+        <i class="fa-solid fa-circle-half-stroke"></i> Switch Theme
+      </button>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp" style="width:100%;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Background Dim Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- =================================================================
+       4. HERO SECTION
+       ================================================================= -->
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-subtitle-badge">
+            <i class="fa-solid fa-star"></i> Handcrafted With Love & Passion
+          </div>
+          <h1 class="hero-title">
+            Art You Can <span class="gradient-text">Cherish</span> & Wear Every Day.
+          </h1>
+          <p class="hero-desc">
+            Discover handcrafted resin memories, expressive fashion and elegant jewellery — thoughtfully created for life's beautiful moments.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#shop-section" class="btn btn-primary">
+              <i class="fa-solid fa-bag-shopping"></i> Explore Collection
+            </a>
+            <a href="#custom-orders" class="btn btn-secondary">
+              <i class="fa-solid fa-wand-magic"></i> Custom Request
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>1,500+</h4>
+              <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Handmade & Unique</p>
+            </div>
+            <div class="stat-item">
+              <h4>4.9 ★</h4>
+              <p>Average Rating</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" alt="Priya Studio Resin Art & Craft Collection">
+            
+            <!-- Floating Highlights -->
+            <div class="floating-pill floating-pill-1">
+              <div class="pill-icon resin">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+              <div class="pill-text">
+                <h5>Ocean Resin Art</h5>
+                <span>100% Glass-finish & Durable</span>
+              </div>
+            </div>
+
+            <div class="floating-pill floating-pill-2">
+              <div class="pill-icon jewel">
+                <i class="fa-solid fa-sparkles"></i>
+              </div>
+              <div class="pill-text">
+                <h5>Botanical Jewellery</h5>
+                <span>Real Preserved Flowers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. FEATURED CATEGORIES TILES
+         ================================================================= -->
+    <section class="categories-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Curated Collections</span>
+          <h2 class="section-title">Explore by Category</h2>
+          <p class="section-desc">Hand-poured resin decor, dainty floral jewellery, and premium unisex graphic tees crafted for modern aesthetics.</p>
+        </div>
+
+        <div class="category-grid">
+          <!-- Category 1: Resin Art -->
+          <div class="category-card" onclick="window.filterByCollection('resin-art')">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=700&q=80" alt="Resin Art Collection" class="category-img">
+            <div class="category-overlay">
+              <span class="category-badge badge-resin-art">Best Seller</span>
+              <h3 class="category-title">Resin Art</h3>
+              <p class="category-subtitle">Ocean Trays, Geode Clocks, Coasters & Preservation Keepsakes</p>
+              <div class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Handcrafted Jewellery -->
+          <div class="category-card" onclick="window.filterByCollection('jewellery')">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80" alt="Handcrafted Jewellery" class="category-img">
+            <div class="category-overlay">
+              <span class="category-badge badge-jewellery">Artisanal</span>
+              <h3 class="category-title">Handmade Jewellery</h3>
+              <p class="category-subtitle">Preserved Flower Pendants, Pearl Chokers, Rings & Hoops</p>
+              <div class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Custom T-Shirts -->
+          <div class="category-card" onclick="window.filterByCollection('t-shirts')">
+            <img src="images/black-vintage-graphic-tshirt.jpg" alt="Vintage Graphic T-Shirts" class="category-img">
+            <div class="category-overlay">
+              <span class="category-badge badge-tshirts">Vintage Collection</span>
+              <h3 class="category-title">Vintage Graphic T-Shirts</h3>
+              <p class="category-subtitle">Black Vintage & Headphone Streetwear Tees at Flat ₹350</p>
+              <div class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. MAIN PRODUCT CATALOG (SHOP SECTION)
+         ================================================================= -->
+    <section class="products-section" id="shop-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Featured Store</span>
+          <h2 class="section-title">Our Studio Creations</h2>
+          <p class="section-desc">Each piece is individually handcrafted with patience and premium materials. Browse, filter, or customize your favourites.</p>
+        </div>
+
+        <!-- Filter Controls Bar -->
+        <div class="catalog-controls">
+          <!-- Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Creations</button>
+            <button class="filter-btn" data-filter="resin-art">Resin Art</button>
+            <button class="filter-btn" data-filter="varmala-preservation">Varmala Preservation 💍</button>
+            <button class="filter-btn" data-filter="baby-memory">Baby Memory 👶</button>
+            <button class="filter-btn" data-filter="keychain">Keychain 🔑</button>
+            <button class="filter-btn" data-filter="resin-earrings">Earrings ✨</button>
+            <button class="filter-btn" data-filter="jewellery">All Jewellery</button>
+            <button class="filter-btn" data-filter="anti-tarnish">Anti Tarnish 🛡️</button>
+            <button class="filter-btn" data-filter="navratri-collection">Navratri Collection 🪔</button>
+            <button class="filter-btn" data-filter="t-shirts">T-Shirts</button>
+            <button class="filter-btn" data-filter="bestsellers">Bestsellers 🔥</button>
+          </div>
+
+          <!-- Search & Sort Controls -->
+          <div class="filter-actions">
+            <!-- Search Box -->
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="search-input" class="search-input" placeholder="Search creations...">
+            </div>
+
+            <!-- Sort By Select -->
+            <select id="sort-select" class="sort-select" aria-label="Sort products">
+              <option value="featured">Featured First</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Injected dynamically by js/app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. CUSTOM ORDER BANNER & WHATSAPP GENERATOR
+         ================================================================= -->
+    <section class="custom-order-section" id="custom-orders">
+      <div class="container">
+        <div class="custom-order-box">
+          
+          <div class="custom-order-info">
+            <span class="section-tag">Custom Commissions</span>
+            <h3>Looking for something made exclusively for you?</h3>
+            <p>
+              At <strong>Priya Studio</strong>, we specialize in personalized creations! Whether you want your <strong>Wedding Garland (Varmala)</strong> preserved forever in high-grade crystal resin, a custom nameplate for your home, or your artwork printed on premium oversized t-shirts, we bring your vision to life.
+            </p>
+
+            <div class="custom-features">
+              <div class="custom-feat-item">
+                <i class="fa-solid fa-circle-check"></i> Wedding Flower Preservation
+              </div>
+              <div class="custom-feat-item">
+                <i class="fa-solid fa-circle-check"></i> Custom Clocks & Nameplates
+              </div>
+              <div class="custom-feat-item">
+                <i class="fa-solid fa-circle-check"></i> Personalized T-Shirt Prints
+              </div>
+              <div class="custom-feat-item">
+                <i class="fa-solid fa-circle-check"></i> Bulk Gifting & Favours
+              </div>
+            </div>
+
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+              <a href="https://wa.me/919876543210?text=Hi%20Priya%20Studio!%20I%20want%20to%20inquire%20about%20a%20custom%20order." target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Chat With Artist Directly
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick WhatsApp Inquiry Form -->
+          <div class="custom-form-card">
+            <h4 style="font-size:1.3rem; margin-bottom:14px;"><i class="fa-solid fa-envelope-open-text" style="color:var(--accent-primary);"></i> Quick Inquiry Form</h4>
+            <form id="custom-order-form">
+              <div class="form-group">
+                <label class="form-label" for="custom-name">Your Full Name</label>
+                <input type="text" id="custom-name" class="form-control" placeholder="e.g. Priya Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="custom-phone">WhatsApp Number</label>
+                <input type="tel" id="custom-phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="custom-category">Category</label>
+                <select id="custom-category" class="form-control">
+                  <option value="Resin Flower Preservation">Resin Flower / Varmala Preservation</option>
+                  <option value="Resin Wall Clock / Platter">Custom Resin Wall Clock or Platter</option>
+                  <option value="Personalized Jewellery">Personalized Resin Jewellery</option>
+                  <option value="Custom Graphic T-Shirt">Custom Printed T-Shirt</option>
+                  <option value="Bulk Corporate / Wedding Favours">Bulk Favours / Gifting</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="custom-details">Describe Your Requirements</label>
+                <textarea id="custom-details" class="form-control" placeholder="Mention size, color preference, dates, or specific ideas..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">
+                <i class="fa-brands fa-whatsapp"></i> Send Request on WhatsApp
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         8. WHY CHOOSE US
+         ================================================================= -->
+    <section class="why-us-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Quality Promise</span>
+          <h2 class="section-title">Why Choose Priya Studio?</h2>
+          <p class="section-desc">We pour heart, patience, and meticulous detail into every single creation.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-hands-holding-heart"></i>
+            </div>
+            <h4>100% Handcrafted</h4>
+            <p>Every single resin piece and jewellery charm is uniquely cast by hand with zero mass production.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>Non-Yellowing Resin</h4>
+            <p>We use top-grade UV resistant, certified food-safe epoxy resin that retains high clarity for years.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+            <h4>Hypoallergenic Metal</h4>
+            <p>Our jewellery chains and clasps are 18K gold/silver plated stainless steel, lead and nickel-free.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h4>Safe Pan-India Shipping</h4>
+            <p>Multi-layer shockproof bubble packaging ensures your delicate art arrives in mint condition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         9. CUSTOMER REVIEWS
+         ================================================================= -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Happy Clients</span>
+          <h2 class="section-title">Loved Across India</h2>
+          <p class="section-desc">Real stories and kind words from customers who welcomed Priya Studio pieces into their homes.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "I got my wedding garland preserved in a hexagonal resin frame with warm lights from Priya Studio. It turned out even more breathtaking than I envisioned. It's the highlight of our living room!"
+            </p>
+            <div class="reviewer-profile">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Ananya Roy" class="reviewer-avatar">
+              <div class="reviewer-info">
+                <h5>Ananya Roy</h5>
+                <span>Verified Buyer • Mumbai</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The Forget-Me-Not teardrop pendant necklace is pure poetry. So delicate, lightweight, and hasn't tarnished at all even after daily wear. The packaging with dried petals made unboxing so special!"
+            </p>
+            <div class="reviewer-profile">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Sneha Kapoor" class="reviewer-avatar">
+              <div class="reviewer-info">
+                <h5>Sneha Kapoor</h5>
+                <span>Verified Buyer • Bengaluru</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The 240 GSM oversized aesthetic tee is top tier quality! Super soft cotton, relaxed drop shoulder silhouette, and the graphic print is crisp. Will definitely order more colors."
+            </p>
+            <div class="reviewer-profile">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=120&q=80" alt="Rohan Verma" class="reviewer-avatar">
+              <div class="reviewer-info">
+                <h5>Rohan Verma</h5>
+                <span>Verified Buyer • Delhi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         10. ABOUT US
+         ================================================================= -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-collage">
+          <img src="images/logo.jpg" alt="Priya Art Studio Logo & Story" class="about-main-img">
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">About Priya Art Studio</span>
+          <h3>Where Creativity Meets Your Everyday Style</h3>
+          
+          <p class="about-welcome-lead">
+            Welcome to <strong>Priya Art Studio</strong> — a creative lifestyle brand from Ahmedabad, Gujarat.
+          </p>
+          <p>
+            Priya Art Studio was born from a simple love for creativity, beautiful details and meaningful things. Based in Ahmedabad, Gujarat, we bring together three things we love the most — handcrafted <strong>Resin Art</strong>, stylish <strong>T-Shirts</strong> and elegant <strong>Jewellery</strong>.
+          </p>
+          <p>
+            What started with a passion for creating beautiful handmade pieces has grown into a space where art, fashion and personal style come together.
+          </p>
+
+          <div class="about-pillars-list">
+            <div class="about-pillar-card">
+              <div class="pillar-content">
+                <h4>🎨 Our Resin Art</h4>
+                <p>We believe that some memories are too special to be kept only in photographs. From wedding varmala preservation and memory frames to personalized resin keepsakes and keychains, we turn your precious moments into something you can treasure for years.</p>
+              </div>
+            </div>
+
+            <div class="about-pillar-card">
+              <div class="pillar-content">
+                <h4>👕 Our T-Shirts</h4>
+                <p>Fashion should be comfortable, expressive and fun. Our T-shirts are selected and created with a focus on everyday style, beautiful designs and easy-to-wear looks that let you express your personality.</p>
+              </div>
+            </div>
+
+            <div class="about-pillar-card">
+              <div class="pillar-content">
+                <h4>💎 Our Jewellery</h4>
+                <p>A little sparkle can make any look special. Our jewellery collection brings together elegant, feminine and versatile pieces designed to complement both everyday outfits and special occasions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlight-box">
+            <h4>❤️ Made With Love, From Ahmedabad</h4>
+            <p>Being an Ahmedabad-based brand, we are proud to bring our creativity from Ahmedabad, Gujarat, to customers across India.</p>
+            <p>Every order is more than just a product for us. Whether it's a resin piece preserving an unforgettable memory, a T-shirt that represents your personality, or a jewellery piece that completes your look — we want every Priya Art Studio creation to feel special to you.</p>
+          </div>
+
+          <div class="about-promise-box">
+            <h4>Our Promise</h4>
+            <p class="promise-tagline">Beautiful products. Thoughtful details. Personal touches.</p>
+            <p>We are continuously exploring new ideas, designs and creations to make Priya Art Studio a place where you can discover something beautiful, meaningful and uniquely yours.</p>
+          </div>
+
+          <div class="about-brand-footer">
+            <div class="brand-footer-name">Priya Art Studio</div>
+            <div class="brand-footer-location"><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat, India</div>
+            <div class="brand-footer-tags">Art • Style • Jewellery • Memories</div>
+            <div class="brand-footer-motto">Made to Be Loved. ❤️</div>
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:28px;">
+            <a href="#shop-section" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Browse Catalogue</a>
+            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         11. FREQUENTLY ASKED QUESTIONS (FAQ)
+         ================================================================= -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Find quick answers about resin care, jewellery materials, t-shirt sizing, and ordering.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I take care of Resin Art products?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Resin items are very durable! To clean, simply wipe with a soft microfibre cloth and lukewarm water with mild soap. Avoid abrasive scrubbers, direct prolonged sunlight, and microwave/dishwasher use.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Does the jewellery tarnish or turn skin green?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              No! We use 18K gold/silver PVD plated surgical stainless steel and real preserved resin beads. They are hypoallergenic, nickel-free, and resistant to tarnishing under normal daily wear. Keep away from harsh perfumes for longest life.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the fabric & fit of Priya Studio T-shirts?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Our t-shirts are made from 240 GSM 100% Super Combed Organic Cotton with bio-wash. They feature a relaxed, oversized drop-shoulder fit that is comfortable for both men and women.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How can I place a custom / flower preservation order?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              You can fill out our Custom Order form on the website or message us directly on WhatsApp with pictures of your flowers or desired design. We provide a step-by-step courier guide for fresh flowers!
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are the delivery timelines across India?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Ready-to-ship products are dispatched within 24-48 hours and arrive in 3-5 business days. Custom handmade resin creations require 7-10 days of curing time before dispatch.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================
+       12. SHOPPING CART SLIDE-OUT DRAWER
+       ================================================================= -->
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping" style="color:var(--accent-primary);"></i> Your Shopping Bag</h3>
+      <button class="action-btn" id="cart-close-btn" aria-label="Close Bag">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="cart-free-shipping-bar">
+      <div id="free-shipping-notice">Add items to unlock <strong>FREE Delivery!</strong></div>
+      <div class="progress-track">
+        <div class="progress-fill" id="free-shipping-progress" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="cart-items-body" id="cart-items-list">
+      <!-- Populated dynamically via js/app.js -->
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      <!-- Coupon Box -->
+      <div class="cart-coupon">
+        <input type="text" id="coupon-input" class="form-control" placeholder="Promo code (e.g. PRIYA10)" style="text-transform:uppercase;">
+        <button class="btn btn-secondary btn-sm" id="apply-coupon-btn">Apply</button>
+      </div>
+      <div id="coupon-message" style="font-size:0.8rem; margin-top:-10px; margin-bottom:12px;"></div>
+
+      <!-- Subtotal -->
+      <div class="cart-subtotal" id="cart-subtotal">
+        <span>Total:</span>
+        <span>₹0</span>
+      </div>
+
+      <!-- Checkout Actions -->
+      <div class="cart-actions">
+        <button class="btn btn-whatsapp" id="whatsapp-checkout-btn">
+          <i class="fa-brands fa-whatsapp"></i> Quick Order on WhatsApp
+        </button>
+        <button class="btn btn-primary" id="standard-checkout-btn">
+          <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =================================================================
+       13. QUICK VIEW MODAL
+       ================================================================= -->
+  <div class="modal" id="quick-view-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="qv-body">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Hub -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- =================================================================
+       14. FOOTER SECTION
+       ================================================================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="images/logo.jpg" alt="Priya Art Studio Logo" class="brand-logo-img">
+            <span>Priya</span>Studio
+          </div>
+          <p>
+            Handcrafting soulful resin decor, dainty floral jewellery, and modern oversized aesthetic apparel. Every order is packed with love from Jaipur, India.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/919876543210" target="_blank" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://pinterest.com" target="_blank" class="social-btn" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h5>Collections</h5>
+          <ul class="footer-links">
+            <li><a href="#shop-section" onclick="window.filterByCollection('resin-art')">Resin Ocean Trays</a></li>
+            <li><a href="#shop-section" onclick="window.filterByCollection('resin-art')">Geode Wall Clocks</a></li>
+            <li><a href="#shop-section" onclick="window.filterByCollection('jewellery')">Preserved Flower Necklaces</a></li>
+            <li><a href="#shop-section" onclick="window.filterByCollection('jewellery')">Baroque Pearl Chokers</a></li>
+            <li><a href="#shop-section" onclick="window.filterByCollection('t-shirts')">Oversized Graphic Tees</a></li>
+            <li><a href="#custom-orders">Varmala Flower Preservation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div class="footer-col">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About Our Studio</a></li>
+            <li><a href="#custom-orders">Custom Order Guide</a></li>
+            <li><a href="#faq">Resin & Jewellery Care</a></li>
+            <li><a href="#faq">Shipping & Returns</a></li>
+            <li><a href="#contact">Contact & WhatsApp Support</a></li>
+            <li><a href="#faq">Privacy & Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Contact -->
+        <div class="footer-col footer-newsletter">
+          <h5>Stay in Touch</h5>
+          <p>Subscribe to receive preview access to new resin drops, secret flash sales, and discount codes.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Priya Studio! ✨');">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+          <div style="margin-top:16px; font-size:0.85rem; color:#a49e97;">
+            <p><i class="fa-solid fa-location-dot" style="color:var(--accent-secondary); margin-right:8px;"></i> Jaipur, Rajasthan, India</p>
+            <p style="margin-top:6px;"><i class="fa-solid fa-phone" style="color:var(--accent-secondary); margin-right:8px;"></i> +91 98765 43210</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Priya Studio. All Rights Reserved. Designed with craftsmanship & passion.</div>
+        <div style="display:flex; gap:16px;">
+          <span>Secure Payments via UPI, Cards & NetBanking</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       SCRIPTS
+       ================================================================= -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
