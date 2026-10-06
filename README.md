@@ -57,7 +57,7 @@ You don't need to install Node or Python!
   ```javascript
   const STUDIO_CONFIG = {
     name: 'Priya Studio',
-    phone: '919876543210', // Put your real 10-digit WhatsApp number with country code (e.g. 91...)
+    phone: '917567259570', // Put your real 10-digit WhatsApp number with country code (e.g. 91...)
     email: 'contact@priyastudio.com',
     ...
   };

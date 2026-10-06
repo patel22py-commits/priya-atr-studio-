@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <title>Priya Studio | Handcrafted Resin Art, Jewellery & Custom T-Shirts</title>
   <meta name="description" content="Priya Studio - Discover handcrafted resin memories, expressive fashion and elegant jewellery — thoughtfully created for life's beautiful moments.">
   <meta name="keywords" content="Priya Studio, resin art, ocean resin tray, geode clock, resin jewellery, custom t-shirts, oversized tees, wedding flower preservation">
@@ -252,7 +252,7 @@
       <button class="btn btn-secondary" id="mobile-theme-toggle-btn" style="width:100%;">
         <i class="fa-solid fa-circle-half-stroke"></i> Switch Theme
       </button>
-      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp" style="width:100%;">
+      <a href="https://wa.me/917567259570" target="_blank" class="btn btn-whatsapp" style="width:100%;">
         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
       </a>
     </div>
@@ -469,7 +469,7 @@
             </div>
 
             <div style="display:flex; gap:16px; flex-wrap:wrap;">
-              <a href="https://wa.me/919876543210?text=Hi%20Priya%20Studio!%20I%20want%20to%20inquire%20about%20a%20custom%20order." target="_blank" class="btn btn-whatsapp">
+              <a href="https://wa.me/917567259570?text=Hi%20Priya%20Studio!%20I%20want%20to%20inquire%20about%20a%20custom%20order." target="_blank" class="btn btn-whatsapp">
                 <i class="fa-brands fa-whatsapp"></i> Chat With Artist Directly
               </a>
             </div>
@@ -486,7 +486,7 @@
 
               <div class="form-group">
                 <label class="form-label" for="custom-phone">WhatsApp Number</label>
-                <input type="tel" id="custom-phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                <input type="tel" id="custom-phone" class="form-control" placeholder="e.g. +91 75672 59570" required>
               </div>
 
               <div class="form-group">
@@ -695,7 +695,7 @@
 
           <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:28px;">
             <a href="#shop-section" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Browse Catalogue</a>
-            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp">
+            <a href="https://wa.me/917567259570" target="_blank" class="btn btn-whatsapp">
               <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
             </a>
           </div>
@@ -852,11 +852,11 @@
             <span>Priya</span>Studio
           </div>
           <p>
-            Handcrafting soulful resin decor, dainty floral jewellery, and modern oversized aesthetic apparel. Every order is packed with love from Jaipur, India.
+            Handcrafting soulful resin decor, dainty floral jewellery, and modern oversized aesthetic apparel. Every order is packed with love from Ahmedabad, Gujarat.
           </p>
           <div class="social-links">
             <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/919876543210" target="_blank" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/917567259570" target="_blank" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://pinterest.com" target="_blank" class="social-btn" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
             <a href="https://youtube.com" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
@@ -897,8 +897,8 @@
             <button type="submit" class="btn btn-primary btn-sm">Join</button>
           </form>
           <div style="margin-top:16px; font-size:0.85rem; color:#a49e97;">
-            <p><i class="fa-solid fa-location-dot" style="color:var(--accent-secondary); margin-right:8px;"></i> Jaipur, Rajasthan, India</p>
-            <p style="margin-top:6px;"><i class="fa-solid fa-phone" style="color:var(--accent-secondary); margin-right:8px;"></i> +91 98765 43210</p>
+            <p><i class="fa-solid fa-location-dot" style="color:var(--accent-secondary); margin-right:8px;"></i> Ahmedabad, Gujarat, India</p>
+            <p style="margin-top:6px;"><i class="fa-solid fa-phone" style="color:var(--accent-secondary); margin-right:8px;"></i> +91 75672 59570</p>
           </div>
         </div>
       </div>
@@ -912,6 +912,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- =================================================================
+       MOBILE STICKY BOTTOM NAVIGATION BAR
+       ================================================================= -->
+  <nav class="mobile-bottom-nav" id="mobile-bottom-nav" aria-label="Quick Mobile Navigation">
+    <a href="#home" class="mb-nav-item active" id="mb-nav-home" onclick="window.scrollTo({top:0, behavior:'smooth'});">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#shop-section" class="mb-nav-item" id="mb-nav-resin" onclick="window.filterByCollection('resin-art');">
+      <i class="fa-solid fa-gem"></i>
+      <span>Resin Art</span>
+    </a>
+    <a href="#shop-section" class="mb-nav-item" id="mb-nav-jewel" onclick="window.filterByCollection('jewellery');">
+      <i class="fa-solid fa-sparkles"></i>
+      <span>Jewellery</span>
+    </a>
+    <button class="mb-nav-item" id="mb-nav-cart" onclick="document.getElementById('cart-toggle-btn').click();" aria-label="Cart">
+      <div class="mb-nav-icon-wrap">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="mb-badge" id="mb-cart-badge">0</span>
+      </div>
+      <span>Cart</span>
+    </button>
+    <a href="https://wa.me/917567259570?text=Hi%20Priya%20Studio!%20I%20want%20to%20inquire%20about%20your%20products." target="_blank" class="mb-nav-item mb-nav-wa" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/917567259570?text=Hi%20Priya%20Studio!%20I%20have%20a%20question." target="_blank" class="floating-whatsapp-btn" id="floating-whatsapp-btn" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-wa-tooltip">Chat with Artist</span>
+  </a>
 
   <!-- =================================================================
        SCRIPTS

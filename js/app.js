@@ -261,10 +261,10 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
               <div class="card-action-row">
                 <button class="btn-card-view" data-id="${item.id}">
-                  <i class="fa-regular fa-eye"></i> View Product
+                  <i class="fa-regular fa-eye"></i> <span class="btn-lbl-full">View Product</span><span class="btn-lbl-mob">View</span>
                 </button>
                 <button class="btn-add-cart" data-id="${item.id}">
-                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                  <i class="fa-solid fa-bag-shopping"></i> <span class="btn-lbl-full">Add to Cart</span><span class="btn-lbl-mob">Add</span>
                 </button>
               </div>
             </div>
@@ -329,6 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       elements.filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       state.activeCategory = btn.getAttribute('data-filter');
       renderProducts();
     });
@@ -350,12 +351,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Direct category clicks from banners
+  // Direct category clicks from banners & nav
   window.filterByCollection = (category) => {
     state.activeCategory = category;
     elements.filterBtns.forEach(b => {
       if (b.getAttribute('data-filter') === category) {
         b.classList.add('active');
+        b.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       } else {
         b.classList.remove('active');
       }
@@ -363,7 +365,26 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     const section = document.getElementById('shop-section');
     if (section) section.scrollIntoView({ behavior: 'smooth' });
+
+    // Update bottom nav active highlight
+    const mbNavItems = document.querySelectorAll('.mb-nav-item');
+    mbNavItems.forEach(item => item.classList.remove('active'));
+    if (category === 'resin-art' || category === 'varmala-preservation' || category === 'baby-memory' || category === 'keychain' || category === 'resin-earrings') {
+      const el = document.getElementById('mb-nav-resin');
+      if (el) el.classList.add('active');
+    } else if (category === 'jewellery' || category === 'anti-tarnish' || category === 'navratri-collection') {
+      const el = document.getElementById('mb-nav-jewel');
+      if (el) el.classList.add('active');
+    }
   };
+
+  const mbHome = document.getElementById('mb-nav-home');
+  if (mbHome) {
+    mbHome.addEventListener('click', () => {
+      document.querySelectorAll('.mb-nav-item').forEach(i => i.classList.remove('active'));
+      mbHome.classList.add('active');
+    });
+  }
 
   // =================================================================
   // 5. WISHLIST MANAGEMENT
@@ -399,6 +420,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalCount = state.cart.reduce((sum, item) => sum + item.quantity, 0);
     if (elements.cartCountBadge) elements.cartCountBadge.textContent = totalCount;
     if (elements.mobileCartBadge) elements.mobileCartBadge.textContent = totalCount;
+    const mbCartBadge = document.getElementById('mb-cart-badge');
+    if (mbCartBadge) mbCartBadge.textContent = totalCount;
     if (elements.wishlistCountBadge) elements.wishlistCountBadge.textContent = state.wishlist.length;
   };
 

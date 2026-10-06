@@ -444,7 +444,7 @@ const PRODUCTS_DATA = [
 const STUDIO_CONFIG = {
   name: 'Priya Art Studio',
   tagline: "Where Creativity Meets Your Everyday Style — Handcrafted Resin Art, Stylish T-Shirts & Elegant Jewellery.",
-  phone: '919876543210', // User can update their real WhatsApp number here
+  phone: '917567259570', // WhatsApp contact number
   email: 'contact@priyaartstudio.com',
   address: 'Priya Art Studio, Ahmedabad, Gujarat, India',
   currency: '₹',
