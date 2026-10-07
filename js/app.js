@@ -705,7 +705,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${product.websiteHighlight || product.sellingLine ? `<div class="qv-selling-line" style="font-style:italic; font-weight:600; color:var(--accent-primary); margin-bottom:12px; font-size:0.95rem;">${product.websiteHighlight || product.sellingLine}</div>` : ''}
 
           <!-- Specifications Table if available -->
-          ${product.color || product.style || product.gender || product.collection || product.productType || product.design || product.accent || product.charm || product.closure || product.finish || product.metalFinish || product.stone || product.occasion || product.idealFor || product.material || product.customization || product.madeFor ? `
+          ${product.color || product.style || product.gender || product.collection || product.productType || product.design || product.accent || product.charm || product.closure || product.finish || product.metalFinish || product.stone || product.centreStone || product.accentStones || product.occasion || product.idealFor || product.material || product.customization || product.madeFor ? `
             <div class="qv-specs-box">
               ${product.productType ? `<div class="qv-spec-item"><strong>Product Type:</strong> ${product.productType}</div>` : ''}
               ${product.material ? `<div class="qv-spec-item"><strong>Material:</strong> ${product.material}</div>` : ''}
@@ -713,6 +713,8 @@ document.addEventListener('DOMContentLoaded', () => {
               ${product.design ? `<div class="qv-spec-item"><strong>Design:</strong> ${product.design}</div>` : ''}
               ${product.color ? `<div class="qv-spec-item"><strong>Primary Colour:</strong> ${product.color}</div>` : ''}
               ${product.metalFinish || product.finish ? `<div class="qv-spec-item"><strong>Metal Finish:</strong> ${product.metalFinish || product.finish}</div>` : ''}
+              ${product.centreStone ? `<div class="qv-spec-item"><strong>Centre Stone:</strong> ${product.centreStone}</div>` : ''}
+              ${product.accentStones ? `<div class="qv-spec-item"><strong>Accent Stones:</strong> ${product.accentStones}</div>` : ''}
               ${product.stone ? `<div class="qv-spec-item"><strong>Stone:</strong> ${product.stone}</div>` : ''}
               ${product.accent ? `<div class="qv-spec-item"><strong>Accent:</strong> ${product.accent}</div>` : ''}
               ${product.charm ? `<div class="qv-spec-item"><strong>Charm:</strong> ${product.charm}</div>` : ''}
@@ -757,10 +759,10 @@ document.addEventListener('DOMContentLoaded', () => {
           ` : ''}
 
           <!-- Why Choose Section if available -->
-          ${product.whyChoose ? `
+          ${product.whyChoose || product.whyYoullLoveIt ? `
             <div style="background:var(--bg-secondary); border-left:3px solid var(--accent-primary); padding:10px 12px; border-radius:4px; margin-bottom:14px; font-size:0.85rem;">
-              <strong style="color:var(--text-primary); display:block; margin-bottom:4px;">💖 Why Choose Custom Varmala Preservation?</strong>
-              <span style="color:var(--text-secondary); line-height:1.5;">${product.whyChoose}</span>
+              <strong style="color:var(--text-primary); display:block; margin-bottom:4px;">${product.whyYoullLoveIt ? "❤️ Why You'll Love It" : '💖 Why Choose Custom Varmala Preservation?'}</strong>
+              <span style="color:var(--text-secondary); line-height:1.5;">${product.whyYoullLoveIt || product.whyChoose}</span>
             </div>
           ` : ''}
 

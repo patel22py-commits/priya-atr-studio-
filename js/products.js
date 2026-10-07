@@ -370,6 +370,67 @@ const PRODUCTS_DATA = [
     featured: true,
     inStock: true
   },
+  {
+    id: 'anti-09',
+    slug: 'oxidised-silver-statement-ring-multicolor-stones-jhumka',
+    name: 'Oxidised Silver-Tone Statement Ring with Multicolor Stones & Jhumka Details',
+    category: 'jewellery',
+    subCategory: 'anti-tarnish',
+    categoryName: 'Anti Tarnish',
+    collection: 'Anti Tarnish Jewellery',
+    price: 100,
+    productType: 'Statement Ring',
+    design: 'Traditional / Boho',
+    finish: 'Oxidised Silver-Tone',
+    metalFinish: 'Oxidised Silver-Tone',
+    centreStone: 'Magenta / Wine Colour',
+    accentStones: 'Multicolour',
+    stone: 'Deep Magenta & Multicolour Stones',
+    charm: 'Dangling Jhumka-Style Bell Charms',
+    style: 'Ethnic & Statement',
+    occasion: 'Festive, Traditional & Party Wear',
+    idealFor: 'Women & Girls',
+    gender: 'Women & Girls',
+    rating: 5.0,
+    reviewsCount: 32,
+    badge: 'Trending',
+    badgeType: 'sale',
+    badges: ['Statement Ring', 'Traditional', 'Festive Special', 'Trending'],
+    image: 'images/oxidised-silver-statement-ring-1.jpg',
+    images: [
+      'images/oxidised-silver-statement-ring-1.jpg',
+      'images/oxidised-silver-statement-ring-2.jpg',
+      'images/oxidised-silver-statement-ring-3.jpg'
+    ],
+    sellingLine: '“Make every festive look unforgettable. ✨”',
+    shortDescription: 'A bold traditional statement ring featuring intricate oxidised detailing, a vibrant centre stone, colourful accents and delicate hanging bell charms.',
+    description: 'Make a statement with this stunning Oxidised Silver-Tone Statement Ring, designed for those who love bold and traditional jewellery.\n\nThe ring features an eye-catching deep magenta centre stone, surrounded by intricate oxidised detailing, floral motifs and colourful stone accents. The delicate dangling jhumka-style bell charms add beautiful movement and a distinctive ethnic touch.\n\nIts rich handcrafted-inspired design makes it perfect for pairing with sarees, lehengas, kurtis, Anarkali suits and festive outfits. Whether you\'re dressing up for Navratri, a wedding or simply want to make your everyday ethnic look more stylish, this statement ring adds an instant wow factor. ✨',
+    keyFeatures: [
+      'Bold statement ring design',
+      'Oxidised silver-tone finish',
+      'Beautiful deep magenta centre stone',
+      'Multicolour decorative stones',
+      'Intricate traditional detailing',
+      'Floral-inspired elements',
+      'Dangling jhumka-style bell charms',
+      'Eye-catching ethnic appearance',
+      'Perfect for festive & traditional styling'
+    ],
+    perfectFor: [
+      'Navratri & Garba',
+      'Weddings & functions',
+      'Festive celebrations',
+      'Sarees & lehengas',
+      'Kurtis & Anarkali outfits',
+      'Ethnic photoshoots',
+      'Parties & cultural events',
+      'Jewellery gifting'
+    ],
+    whyYoullLoveIt: 'Bold, colourful and beautifully traditional. The combination of the large centre stone, intricate detailing and playful hanging bells gives this ring a unique character that stands out from ordinary jewellery.',
+    options: ['Free Size (Adjustable)'],
+    featured: true,
+    inStock: true
+  },
 
   // --- T-SHIRTS & APPAREL ---
   {
