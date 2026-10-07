@@ -431,6 +431,64 @@ const PRODUCTS_DATA = [
     featured: true,
     inStock: true
   },
+  {
+    id: 'navratri-ring-01',
+    slug: 'oxidised-silver-tone-deity-statement-ring-jhumka-charms',
+    name: 'Oxidised Silver-Tone Deity Statement Ring with Jhumka Charms',
+    category: 'jewellery',
+    subCategory: 'navratri-collection',
+    categoryName: 'Navratri Collection',
+    collection: 'Navratri Collection',
+    price: 100,
+    productType: 'Statement Ring',
+    design: 'Deity-Inspired / Traditional',
+    finish: 'Oxidised Silver-Tone',
+    metalFinish: 'Oxidised Silver-Tone',
+    style: 'Ethnic & Statement',
+    details: 'Jhumka-Style Dangling Charms',
+    charm: 'Multiple Dangling Jhumka-Style Charms',
+    occasion: 'Festive, Traditional & Party Wear',
+    idealFor: 'Women & Girls',
+    gender: 'Women & Girls',
+    rating: 5.0,
+    reviewsCount: 45,
+    badge: 'Navratri Special',
+    badgeType: 'sale',
+    badges: ['Navratri Special', 'Ethnic Favourite', 'Statement Piece', 'Trending', 'Festive Edit'],
+    image: 'images/oxidised-silver-deity-statement-ring-1.jpg',
+    images: [
+      'images/oxidised-silver-deity-statement-ring-1.jpg',
+      'images/oxidised-silver-deity-statement-ring-2.jpg'
+    ],
+    sellingLine: '“Tradition, artistry & statement style — all in one piece. ✨”',
+    shortDescription: 'A unique traditional statement ring featuring an intricately detailed deity-inspired design with delicate dangling jhumka charms.',
+    description: 'Add a touch of traditional Indian artistry to your jewellery collection with this beautiful Oxidised Deity Statement Ring.\n\nThe centrepiece features an intricately crafted serene deity-inspired face, surrounded by detailed crown and ornamental patterns. The beautiful oxidised silver-tone finish highlights the intricate design, while the multiple dangling jhumka-style charms add movement and an eye-catching ethnic touch.\n\nThis bold statement ring is perfect for those who love traditional, spiritual-inspired and handcrafted-looking jewellery. Pair it with a saree, kurti, lehenga or other ethnic outfits to create a distinctive festive look.',
+    keyFeatures: [
+      'Unique deity-inspired statement design',
+      'Detailed traditional artwork',
+      'Oxidised silver-tone finish',
+      'Beautiful crown and facial detailing',
+      'Multiple dangling jhumka-style charms',
+      'Bold and eye-catching design',
+      'Perfect for ethnic styling',
+      'Great addition to festive jewellery collections'
+    ],
+    perfectFor: [
+      'Navratri & Garba',
+      'Diwali & festive occasions',
+      'Temple visits',
+      'Weddings & traditional functions',
+      'Sarees & lehengas',
+      'Kurtis & Anarkali outfits',
+      'Ethnic photoshoots',
+      'Cultural events',
+      'Festive gifting'
+    ],
+    whyYoullLoveIt: 'A statement piece inspired by traditional Indian artistry. The detailed face motif combined with the dangling bell charms gives this ring a distinctive look that stands out beautifully with ethnic outfits.',
+    options: ['Free Size (Adjustable)'],
+    featured: true,
+    inStock: true
+  },
 
   // --- T-SHIRTS & APPAREL ---
   {

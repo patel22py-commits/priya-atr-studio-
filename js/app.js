@@ -718,6 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
               ${product.stone ? `<div class="qv-spec-item"><strong>Stone:</strong> ${product.stone}</div>` : ''}
               ${product.accent ? `<div class="qv-spec-item"><strong>Accent:</strong> ${product.accent}</div>` : ''}
               ${product.charm ? `<div class="qv-spec-item"><strong>Charm:</strong> ${product.charm}</div>` : ''}
+              ${product.details ? `<div class="qv-spec-item"><strong>Details:</strong> ${product.details}</div>` : ''}
               ${product.closure ? `<div class="qv-spec-item"><strong>Closure:</strong> ${product.closure}</div>` : ''}
               ${product.style ? `<div class="qv-spec-item"><strong>Style:</strong> ${product.style}</div>` : ''}
               ${product.categoryName ? `<div class="qv-spec-item"><strong>Category:</strong> ${product.categoryName}</div>` : ''}
